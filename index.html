@@ -10,16 +10,62 @@
         <!--Adding Google Fonts from CDN-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Skranji&display=swap" rel="stylesheet">
 
         <!--Add your CSS rules here-->
         <style>
-            
+           html{
+              height: 100%;
+          }
+          body{
+              text-align: center;
+              color:#ff531e;
+              font-size : 24px ;
+              height: 100%;
+              background: url("https://images.unsplash.com/photo-1580655653885-65763b2597d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+              background-size: 150%;
+              background-repeat: no-repeat;
+              animation: new_way 20s ease-in-out infinite;
+          }
+
+          @keyframes new_way{
+              0%{
+                  background-position: left;
+              }
+              50%{
+                  background-position: right;
+              }
+              100%{
+                  background-position: left;
+              }
+          }
+
+          h1,h2{
+            font-family: 'Skranji', cursive;
+          }
+
+          a{
+              text-decoration: none;
+          }
+
+          #title{
+              height: 100%;
+              display:flex;
+              flex-direction: column;
+              justify-content: space-around;
+          }
         </style>
     </head>
     <body>
-        <h1>Hollywood Quiz</h1>
-        <a href="game.html"><i class="ri-play-circle-fill"></i></a>
-        <h2>PLAY</h2>
+        <div id="title">
+            <h1>Hollywood Quiz</h1>
+            <div>
+               <a href="game.html"><i class="ri-play-circle-fill ri-3x"></i></a>
+               <h2>PLAY</h2>
+            </div>  
+        <div>
+        </div>
+        <div></div>
+        </div>
     </body>
 </html>
