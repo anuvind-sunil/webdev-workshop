@@ -2,7 +2,7 @@ const TRIVIA_API_URL = "https://opentdb.com/api.php?amount=10&category=22&type=m
 const TENOR_API_KEY = "6TU8O2XXG9LD"; // you need to replace this with your own API key from Tenor (see https://tenor.com/gifapi)
 const TENOR_API_URL = "https://g.tenor.com/v1/search?q=QUERY&key=API_KEY&limit=10".replace("API_KEY", TENOR_API_KEY);
 
-let correct_answer = ""; // the current correct answer
+let correct_answer = "Suriname"; // the current correct answer
 let level = 1; // the current level
 let lives = 3; // the number of lives remaining
 
